@@ -72,7 +72,8 @@ class MainActivity : ComponentActivity() {
         LaunchedEffect(Unit) {
             val permissions = listOf(
                 Manifest.permission.ACCESS_FINE_LOCATION,
-                Manifest.permission.BLUETOOTH_SCAN
+                Manifest.permission.BLUETOOTH_SCAN,
+                Manifest.permission.BLUETOOTH_CONNECT
             ).filter {
                 ContextCompat.checkSelfPermission(
                     this@MainActivity,
